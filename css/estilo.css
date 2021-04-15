@@ -1,0 +1,292 @@
+.header {
+    background-color: white;
+    align-items: center;
+    color: black;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+    box-shadow: black;
+}
+
+.header__p {
+    color: #27D2AF;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    top: 3px;
+    margin-left: 100px;
+}
+
+
+/*Logo tortuga*/
+
+.header__img {
+    width: 100px;
+    left: 100px;
+    margin-left: 0px;
+}
+
+
+/* Menu de header*/
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: -49px 0px 0px -4em;
+}
+
+.header__menu li {
+    margin: 10px 0;
+}
+
+.header__menu li a:hover {
+    text-decoration: underline;
+    margin-bottom: 0%;
+}
+
+.header__menu li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 0%;
+}
+
+.header__menu:hover ul {
+    display: block;
+}
+
+.header__menu--profile {
+    display: flex;
+    align-items: center;
+    color: #27D2AF;
+    font-weight: bold;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-right: 5px;
+}
+
+.header__menu--profile img {
+    width: 40px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+body {
+    background-image: linear-gradient( 109.6deg, rgba(102, 203, 149, 1) 11.2%, rgba(39, 210, 175, 1) 98.7%);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*buscador tortuga*/
+
+.main__title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+::placeholder {
+    color: white;
+}
+.p1{
+    font-size: medium;
+    color: #fff;
+    font-weight:bold;
+    border: 1 black solid;
+    margin-top: 100px;
+    
+}
+/*table*/
+a{
+    text-decoration:none;
+}
+
+.container {
+	position: relative;
+	top: 50%;
+	left: 50%;
+    margin-top: 150px;
+margin-bottom: -150px;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+
+
+.footer {
+    align-items: center;
+    background-image: linear-gradient( 109.6deg, rgba(102, 203, 149, 1) 11.2%, rgba(39, 210, 175, 1) 98.7%);
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*carrusel*/
+
+.carousel {
+    width: 100%;
+    position: relative;
+}
+
+.carousel_container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding: 10px 30px;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: aqua;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel-item:hover~.carousel-item {
+    transform: translate3d(100px, 0, 0)
+}
+
+.carousel_container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel_container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.carousel-item__details:hover {
+    opacity: 1;
+}
+
+.carousel-item__details p {
+    margin: 2px 0px;
+}
+
+.carousel-item__details--title {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        border: black solid 1px;
+        box-shadow: none;
+        padding: 12px;
+        width: 100%;
+    }
+    .footer {
+        align-items: flex-start;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 4px;
+}
+
+ ::-webkit-scrollbar:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ ::-webkit-scrollbar:hover:active {
+    background: #999;
+}
